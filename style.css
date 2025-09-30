@@ -1,0 +1,66 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+}
+
+#Heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 200px 150px 100px;
+    column-gap: 10px;
+    row-gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    max-width: 500px;
+}
+
+/* Ensure input fields and buttons look consistent */
+#todo,
+#todo-date {
+    font-size: 15px;
+    padding: 10px 5px;
+    width: 100%;
+}
+
+.btn-delete {
+    background-color: rgb(185, 8, 8);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 0;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn-todo {
+    background-color: rgb(8, 185, 73);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 0;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* ✅ This is what fixes the todo layout */
+.todo-container > div {
+    display: grid;
+    grid-template-columns: 200px 150px 100px;
+    column-gap: 10px;
+    align-items: center;
+    margin-top: 10px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
